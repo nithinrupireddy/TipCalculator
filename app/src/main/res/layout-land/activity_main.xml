@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashBoard">
+
+
+    <TextView
+        android:id="@+id/billTotalTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/land_margin_start_forLabel"
+        android:fontFamily="sans-serif"
+        android:text="Bill Total with Tax :"
+        android:textColor="#000"
+        android:textSize="@dimen/land_label_textSize"
+        app:layout_constraintBaseline_toBaselineOf="@+id/billTotalEdit"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/billTotalEdit"
+        android:layout_width="@dimen/land_editLabel_width"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/land_billtotalEdit_marginLeft"
+        android:background="@color/palegreen"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:imeOptions="flagNoExtractUi"
+        android:inputType="number|numberDecimal"
+        android:textAlignment="textEnd"
+        android:textColor="#000"
+        android:textSize="@dimen/land_editTextSize"
+        app:layout_constraintBaseline_toBaselineOf="@+id/noOfPeopleTV"
+        app:layout_constraintBottom_toBottomOf="@+id/billTotalTV"
+        app:layout_constraintLeft_toRightOf="@+id/billTotalTV" />
+
+    <TextView
+        android:textSize="@dimen/land_label_textSize"
+        android:id="@+id/tipPercentTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/land_margin_start_forLabel"
+        android:fontFamily="sans-serif"
+        android:text="Tip Percent  : "
+        android:textColor="#000"
+        app:layout_constraintBaseline_toBaselineOf="@+id/goButton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="@dimen/land_radiogroup_width"
+        android:layout_height="@dimen/land_radioGroup_height"
+        android:layout_marginStart="@dimen/land_radiogroup_marginstart"
+        android:layout_marginTop="@dimen/land_radioGroup_marginTop"
+        android:layout_marginEnd="@dimen/land_radioGroup_marginEnd"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipPercentTV">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="@dimen/land_radioButton_width"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimary"
+            android:text="12%"
+            app:layout_constraintEnd_toStartOf="@+id/radioButton4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="1dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="@dimen/land_radioButton_width"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimary"
+            android:text="15%"
+            app:layout_constraintEnd_toStartOf="@+id/radioButton3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/radioButton1"
+            tools:layout_editor_absoluteY="1dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="@dimen/land_radioButton_width"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimary"
+            android:text="18%"
+            app:layout_constraintEnd_toStartOf="@+id/radioButton4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/radioButton4" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="@dimen/land_radioButton_width"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/colorPrimary"
+            android:text="20%"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/radioButton3" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/noOfPeopleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/land_noOfpeopleTv_marginleft"
+        android:fontFamily="sans-serif"
+        android:text="No of People :"
+        android:textColor="#000"
+        android:textSize="@dimen/land_label_textSize"
+        app:layout_constraintBaseline_toBaselineOf="@+id/noOfPeopleEdit"
+        app:layout_constraintLeft_toRightOf="@+id/billTotalEdit" />
+
+    <EditText
+        android:textSize="@dimen/land_label_textSize"
+        android:id="@+id/noOfPeopleEdit"
+        android:layout_width="@dimen/land_editLabel_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/land_noOfPeopleEdit_mTop"
+        android:layout_marginRight="@dimen/land_marginRight_ET"
+        android:background="@color/palegreen"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:imeOptions="flagNoExtractUi"
+        android:inputType="number"
+        android:textAlignment="textEnd"
+        android:textColor="#000"
+        app:layout_constraintLeft_toRightOf="@+id/noOfPeopleTV"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/goButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/land_goButton_marginTop"
+        android:layout_marginRight="@dimen/goButton_marinRight"
+        android:background="@color/colorPrimary"
+        android:text="GO"
+        android:textColor="#fff"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noOfPeopleEdit"
+        />
+
+    <TextView
+        android:id="@+id/tipAmountTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/land_margin_start_forLabel"
+        android:fontFamily="sans-serif"
+        android:text="Tip Amount:"
+        android:textColor="#000"
+        android:textSize="@dimen/land_label_textSize"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tipAmountEdit"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:textSize="@dimen/land_editTextSize"
+        android:id="@+id/tipAmountEdit"
+        android:layout_width="@dimen/land_editLabel_width"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/land_tipamountedit_marginleft"
+        android:layout_marginTop="@dimen/land_tipamount_margintop"
+        android:background="@color/palegrey"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:imeOptions="flagNoExtractUi"
+        android:inputType="number"
+        android:textAlignment="textEnd"
+        android:textColor="#000"
+        app:layout_constraintLeft_toRightOf="@+id/tipAmountTV"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:textSize="@dimen/land_label_textSize"
+        android:id="@+id/totalWithTipTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/land_margin_start_forLabel"
+        android:fontFamily="sans-serif"
+        android:text="Total with Tip :"
+        android:textColor="#000"
+        app:layout_constraintBaseline_toBaselineOf="@+id/totalWithTipEdit"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:textSize="@dimen/land_editTextSize"
+        android:id="@+id/totalWithTipEdit"
+        android:layout_width="@dimen/land_editLabel_width"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/land_totaltipedit_marginleft"
+        android:layout_marginTop="@dimen/land_totalTipEdit_marginTop"
+        android:background="@color/palegrey"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:inputType="number"
+        android:textAlignment="textEnd"
+        android:textColor="#000"
+        app:layout_constraintLeft_toRightOf="@+id/totalWithTipTV"
+        app:layout_constraintTop_toBottomOf="@+id/tipAmountEdit" />
+
+    <TextView
+        android:id="@+id/totalPerPersonTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/land_totalPerPersonTv_mTop"
+        android:fontFamily="sans-serif"
+        android:text="Total per Person :"
+        android:textColor="#000"
+        android:textSize="@dimen/land_label_textSize"
+        app:layout_constraintBaseline_toBaselineOf="@+id/totalPerPersonEdit"
+        app:layout_constraintLeft_toRightOf="@+id/tipAmountEdit"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        android:layout_marginLeft="@dimen/land_overage_tv_mLeft"
+        />
+
+    <EditText
+        android:textSize="@dimen/land_editTextSize"
+        android:id="@+id/totalPerPersonEdit"
+        android:layout_width="@dimen/land_edit_width1"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/land_totalperpeprson_edit_marginLeft"
+        android:layout_marginTop="@dimen/land_totalperpersonedit_mTop"
+        android:layout_marginRight="@dimen/land_totalPerPersonEdit_mRight"
+        android:background="@color/palegrey"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:inputType="number"
+        android:textAlignment="textEnd"
+        android:textColor="#000"
+        app:layout_constraintLeft_toRightOf="@+id/totalPerPersonTV"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        tools:layout_editor_absoluteX="528dp"
+        tools:layout_editor_absoluteY="219dp" />
+
+    <TextView
+        android:id="@+id/overageTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/land_overage_tv_mLeft"
+        android:fontFamily="sans-serif"
+        android:text="Overage :"
+        android:textColor="#000"
+        android:textSize="@dimen/land_label_textSize"
+        app:layout_constraintBaseline_toBaselineOf="@+id/overageEdit"
+        app:layout_constraintLeft_toRightOf="@+id/tipAmountEdit"
+        app:layout_constraintTop_toBottomOf="@+id/totalPerPersonTV" />
+
+    <EditText
+        android:textSize="@dimen/land_editTextSize"
+        android:id="@+id/overageEdit"
+        android:layout_width="@dimen/land_edit_width1"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/land_overage_edit_marginleft"
+        android:layout_marginTop="@dimen/land_overage_edit_marginTop"
+        android:layout_marginRight="@dimen/land_overage_mRight"
+        android:background="@color/palegrey"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:inputType="number"
+        android:textAlignment="textEnd"
+        android:textColor="#000"
+        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintLeft_toRightOf="@+id/overageTV"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalPerPersonEdit" />
+
+    <Button
+        android:id="@+id/clearBtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/land_clearButton_marginHeight"
+        android:layout_marginStart="@dimen/land_clearButton_marginStart"
+        android:layout_marginTop="@dimen/land_clearButton_marginTop"
+        android:layout_marginEnd="@dimen/land_clearButton_marginEnd"
+        android:layout_marginBottom="@dimen/land_clearButton_marginBottom"
+        android:background="@color/colorPrimary"
+        android:padding="2dp"
+        android:text="CLEAR"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalWithTipEdit" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="land_margin_start_forLabel">15dp</dimen>
+    <dimen name="land_label_textSize">16sp</dimen>
+    <dimen name="land_editLabel_width">160dp</dimen>
+    <dimen name="land_edit_width1">130dp</dimen>
+    <dimen name="land_billtotalEdit_marginLeft">10dp</dimen>
+    <dimen name="land_tipamountedit_marginleft">45dp</dimen>
+    <dimen name="land_totaltipedit_marginleft">30dp</dimen>
+    <dimen name="land_editTextSize">16sp</dimen>
+    <dimen name="land_noOfpeopleTv_marginleft">70dp</dimen>
+    <dimen name="land_radiogroup_width">340dp</dimen>
+    <dimen name="land_radioGroup_height">39dp</dimen>
+    <dimen name="land_radiogroup_marginstart">60dp</dimen>
+    <dimen name="land_radioGroup_marginTop">20dp</dimen>
+    <dimen name="land_radioGroup_marginEnd">45dp</dimen>
+    <dimen name="land_radioButton_width">65dp</dimen>
+    <dimen name="land_noOfPeopleEdit_mTop">13dp</dimen>
+    <dimen name="land_marginRight_ET">20dp</dimen>
+    <dimen name="land_goButton_marginTop">8dp</dimen>
+    <dimen name="land_tipamount_margintop">10dp</dimen>
+    <dimen name="land_totalTipEdit_marginTop">10dp</dimen>
+    <dimen name="land_totalPerPersonTv_mTop">3dp</dimen>
+    <dimen name="land_totalperpeprson_edit_marginLeft">20dp</dimen>
+    <dimen name="land_totalperpersonedit_mTop">5dp</dimen>
+    <dimen name="land_overage_tv_mLeft">75dp</dimen>
+    <dimen name="land_overage_edit_marginleft">20dp</dimen>
+    <dimen name="land_overage_edit_marginTop">10dp</dimen>
+    <dimen name="land_clearButton_marginHeight">35dp</dimen>
+    <dimen name="land_clearButton_marginStart">30dp</dimen>
+    <dimen name="land_clearButton_marginTop">5dp</dimen>
+    <dimen name="land_clearButton_marginEnd">30dp</dimen>
+    <dimen name="land_clearButton_marginBottom">7dp</dimen>
+    <dimen name="goButton_marinRight">25dp</dimen>
+    <dimen name="land_totalPerPersonEdit_mRight">20dp</dimen>
+    <dimen name="land_overage_mRight">18dp</dimen>
+</resources>
