@@ -36,3 +36,36 @@ So here comes the “Tip Calculator” 🎉.
 * Material Design.
 * Blazingly fast and lightweight.
 * No Ads, No Pop-ups.
+
+<p align="center">
+  <img  src="Assets/tipcalcGif.gif" width="1920">
+</p>
+
+
+## Platform limitations :
+
+* This is an Android Application, Apologies iOS users (and Windows users).
+* This app works great with Android Oreo (API 26) and above.
+* This is an offline application and it doesn't require internet
+
+
+## Disclaimer and Privacy statement:
+
+To be 100% transparent:
+
+* Tip Calculator does not and will never collect user information in terms of user privacy.
+* I will not track your IP. 
+* No personal data or files will be sent to me or third parties. 
+
+I might use analytics tools to collect basic usage data such as how many times the program has been downloaded.
+
+Feel free to review the source code.
+
+## Contributing:
+
+* Tip Calculator is free and open source, if you like my work, please consider:
+   * Star this project on GitHub
+   * Endorse me [here](https://www.linkedin.com/in/nithin-reddy-rupireddy/)
+
+
+## Stay tuned 📢
