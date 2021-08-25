@@ -38,7 +38,7 @@ So here comes the “Tip Calculator” 🎉.
 * No Ads, No Pop-ups.
 
 <p align="center">
-  <img  src="Assets/tipcalcGif.gif" width="1920">
+  <img  src="Assets/tipcalcGif.gif" width="300">
 </p>
 
 
